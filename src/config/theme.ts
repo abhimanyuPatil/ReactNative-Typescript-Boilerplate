@@ -17,6 +17,31 @@ const lightColors:IColors = {
     placeholder: "#606060",
     textColor:"#111111"
 }
+export interface IFontSizes {
+    base: number;
+    small: number;
+    header: number;
+    large: number;
+    error: number;
+    xsmall:number
+}
+  
+export const fontSizes:IFontSizes = {
+    base: 16,
+    small: 14,
+    header: 22,
+    large: 18,
+    error: 12,
+    xsmall:10
+};
+
+export const xTiny= 1;
+export const tiny= 2;
+export const small= 3;
+export const base= 5;
+export const large= 7;
+export const xLarge= 10;
+
 export interface IThemeData{
     light: IColors,
     dark: IColors,
