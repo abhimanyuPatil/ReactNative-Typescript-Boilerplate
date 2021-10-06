@@ -1,21 +1,30 @@
 export interface IColors{
-    background:string,
-    label:string,
-    placeholder:string,
-    textColor:string,
+    background: string,
+    text:string,
+    blue: string,
+    green:string,
+    cardBg: string,
+    red: string,
+    grey:string
 }
 
 const darkColors:IColors = {
-    background: "#141414",
-    label: "#fff",
-    placeholder: "#606060",
-    textColor:"#ffffff"
+    background: "#111117",
+    text:'#f4f4f5',
+    cardBg: "#22222f",
+    blue: "#798dff",
+    red: "#ff5e93",
+    green: "#0bb68c",
+    grey:"#8B8C8F"
 }
 const lightColors:IColors = {
-    background: "#ffffff",
-    label: "#111111",
-    placeholder: "#606060",
-    textColor:"#111111"
+    background: "#E6EDF4",
+    text:"#1f2127",
+    cardBg: "#fff",
+    red:"#da4c7b",
+    blue: "#405cf9",
+    grey:"#242424",
+    green:"#0bb68c"
 }
 export interface IThemeData{
     light: IColors,
@@ -29,6 +38,12 @@ export interface IThemeData{
         xLarge:Number,
     }
 }
+export const xTiny = 1;
+export const tiny = 2;
+export const small = 3;
+export const base = 5;
+export const large = 7;
+export const xLarge = 10;
 export const themeData:IThemeData = {
     light: lightColors,
     dark: darkColors,
@@ -41,3 +56,20 @@ export const themeData:IThemeData = {
         xLarge: 10
     }
 }
+export interface IFontSizes {
+    base: number;
+    small: number;
+    header: number;
+    large: number;
+    error: number;
+    xsmall:number
+}
+  
+export const fontSizes:IFontSizes = {
+    base: 16,
+    small: 14,
+    header: 22,
+    large: 18,
+    error: 12,
+    xsmall:10
+};
